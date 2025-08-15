@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "Which cellular carriers are supported?",
-      answer: "Our solution works with major carriers including AT&T and T-Mobile, plus their MVNOs. The technology is carrier-agnostic, meaning customers from any supported carrier will experience improved connectivity when in your business location."
+      answer: "Our solution works with all major carriers including Verizon, AT&T, T-Mobile, and their MVNOs. The technology is carrier-agnostic, meaning customers from any carrier will experience improved connectivity when in your business location."
     },
     {
       question: "How long does installation take?",

@@ -31,7 +31,7 @@ const HowItWorks = () => {
   ];
 
   const technicalSpecs = [
-    "Works with all major carriers (Verizon, AT&T, T-Mobile)",
+    "Works with major carriers (AT&T, T-Mobile)",
     "Supports 4G LTE and 5G connectivity",
     "Enterprise-grade security protocols",
     "Automatic failover capabilities",

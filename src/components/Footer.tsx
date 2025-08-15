@@ -22,7 +22,7 @@ const Footer = () => {
                 />
                 <div>
                   <h3 className="font-bold text-primary">California Carrier Offload</h3>
-                  <p className="text-sm text-muted-foreground">Better Cell Coverage For Your Business</p>
+                  <p className="text-sm text-muted-foreground">Better Cell Coverage For Your Business.</p>
                 </div>
               </div>
               <p className="text-muted-foreground text-sm max-w-xs">

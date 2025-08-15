@@ -26,7 +26,7 @@ const Header = () => {
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-primary">California Carrier Offload</h1>
-              <p className="text-sm text-muted-foreground">Better Cell Coverage For Your Business</p>
+              <p className="text-sm text-muted-foreground">Better Cell Coverage For Your Business.</p>
             </div>
           </div>
 

@@ -43,7 +43,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                Better Cell Coverage For Your Business
+                Better Cell Coverage For Your Business.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Get grant-funded cellular offload solutions that improve connectivity for your customers 

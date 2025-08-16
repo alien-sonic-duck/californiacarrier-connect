@@ -7,6 +7,8 @@ const Footer = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+
   return (
     <footer className="bg-secondary border-t border-border">
       <div className="banking-container">
@@ -16,7 +18,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/lovable-uploads/60d40ce8-c226-488a-9037-52cf34a76f5d.png" 
+                  src={logoUrl}
                   alt="CCO" 
                   className="h-8 w-auto"
                 />

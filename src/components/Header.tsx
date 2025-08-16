@@ -12,6 +12,7 @@ const Header = () => {
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];
+  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50">
@@ -20,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png" 
+              src={logoUrl}
               alt="California Carrier Offload" 
               className="h-10 w-auto"
             />

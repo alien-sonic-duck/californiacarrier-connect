@@ -35,6 +35,8 @@ const Home = () => {
     "Educational institutions"
   ];
 
+  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+
   return (
     <div>
       {/* Hero Section */}
@@ -66,7 +68,7 @@ const Home = () => {
             <div className="relative">
               <div className="banking-card text-center">
                 <img 
-                  src="/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png" 
+                  src={logoUrl}
                   alt="California Carrier Offload" 
                   className="h-32 w-auto mx-auto mb-4"
                 />

@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Users, Award, Globe } from "lucide-react";
-
 const About = () => {
   const values = [
     {
@@ -25,6 +24,7 @@ const About = () => {
       description: "Leading-edge cellular offload solutions that prepare businesses for the future of connectivity"
     }
   ];
+  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
 
   return (
     <div>
@@ -71,7 +71,7 @@ const About = () => {
             <div className="banking-card">
               <div className="text-center p-8">
                 <img 
-                  src="/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png" 
+                  src={logoUrl}
                   alt="California Carrier Offload" 
                   className="h-24 w-auto mx-auto mb-6"
                 />

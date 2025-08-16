@@ -1,5 +1,6 @@
 // Helper functions for base URL
-const base = import.meta.env.BASE_URL || "/";
+const baseUrl = import.meta.env.BASE_URL || "/";
+const base = baseUrl || "/";
 function withBase(path: string) {
   if (path.startsWith("/")) {
     return base.replace(/\/$/, "") + path;

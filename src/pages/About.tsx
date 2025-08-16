@@ -2,6 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Users, Award, Globe } from "lucide-react";
 const About = () => {
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const withBase = (p: string) => `${base}${p.replace(/^\//, "")}`;
   const values = [
     {
       icon: Shield,
@@ -24,7 +28,7 @@ const About = () => {
       description: "Leading-edge cellular offload solutions that prepare businesses for the future of connectivity"
     }
   ];
-  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+  const logoUrl = withBase('lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png');
 
   return (
     <div>

@@ -5,7 +5,11 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const withBase = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+
+  const withBase = (p: string) => `${base}${p.replace(/^\//, "")}`;
 
   const navigation = [
     { name: "Home", path: "" },
@@ -14,7 +18,7 @@ const Header = () => {
     { name: "FAQ", path: "faq" },
     { name: "Contact", path: "contact" },
   ];
-  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+  const logoUrl = withBase('lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png');
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50">

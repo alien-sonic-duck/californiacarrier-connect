@@ -5,12 +5,14 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const withBase = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
+
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "How It Works", href: "/how-it-works" },
-    { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", path: "" },
+    { name: "How It Works", path: "how-it-works" },
+    { name: "About", path: "about" },
+    { name: "FAQ", path: "faq" },
+    { name: "Contact", path: "contact" },
   ];
   const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
 
@@ -36,7 +38,7 @@ const Header = () => {
             {navigation.map((item) => (
               <a
                 key={item.name}
-                href={item.href}
+                href={withBase(item.path)}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.name}
@@ -66,7 +68,7 @@ const Header = () => {
               {navigation.map((item) => (
                 <a
                   key={item.name}
-                  href={item.href}
+                  href={withBase(item.path)}
                   className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -1,13 +1,22 @@
+// Helper functions for base URL
+const base = import.meta.env.BASE_URL || "/";
+function withBase(path: string) {
+  if (path.startsWith("/")) {
+    return base.replace(/\/$/, "") + path;
+  }
+  return base + path;
+}
+
 const Footer = () => {
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "How It Works", href: "/how-it-works" },
-    { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", path: "/" },
+    { name: "How It Works", path: "/how-it-works" },
+    { name: "About", path: "/about" },
+    { name: "FAQ", path: "/faq" },
+    { name: "Contact", path: "/contact" },
   ];
 
-  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+  const logoUrl = withBase('lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png');
 
   return (
     <footer className="bg-secondary border-t border-border">
@@ -39,7 +48,7 @@ const Footer = () => {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={withBase(item.path)}
                     className="block text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
                   >
                     {item.name}

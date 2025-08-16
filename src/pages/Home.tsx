@@ -3,6 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Wifi, Shield, TrendingUp, Zap, CheckCircle, Users } from "lucide-react";
 
 const Home = () => {
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const withBase = (p: string) => `${base}${p.replace(/^\//, "")}`;
+
   const benefits = [
     {
       icon: Wifi,
@@ -35,7 +40,7 @@ const Home = () => {
     "Educational institutions"
   ];
 
-  const logoUrl = new URL('/lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png', import.meta.env.BASE_URL).href;
+  const logoUrl = withBase('lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png');
 
   return (
     <div>
@@ -61,7 +66,7 @@ const Home = () => {
                   Check Your Eligibility
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="/how-it-works">Learn How It Works</a>
+                  <a href={withBase("how-it-works")}>Learn How It Works</a>
                 </Button>
               </div>
             </div>
@@ -154,7 +159,7 @@ const Home = () => {
                 className="banking-button-primary mt-6"
                 asChild
               >
-                <a href="/how-it-works">Learn More Details</a>
+                <a href={withBase("how-it-works")}>Learn More Details</a>
               </Button>
             </div>
             <div className="banking-card">
@@ -201,7 +206,7 @@ const Home = () => {
                   Apply Now - It's Free
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="/contact">Contact Us</a>
+                  <a href={withBase("contact")}>Contact Us</a>
                 </Button>
               </div>
             </CardContent>

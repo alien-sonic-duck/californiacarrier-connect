@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-    // Ensure correct asset paths when hosted at /californiacarrier-connect/
-  base: mode === "production" ? "/californiacarrier-connect/" : "/",
+    // Use root base for custom domain (GitHub Pages)
+  base: "/",
   server: {
     host: "::",
     port: 8080,

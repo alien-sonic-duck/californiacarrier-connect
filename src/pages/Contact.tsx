@@ -33,7 +33,7 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video w-full mb-6">
+                <div className="w-full h-[700px] mb-6">
                   <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSfzQCqdOwmaYm18HuOiB1SAQOQhePpJKQgbLyUlC7RW4mLRcw/viewform?embedded=true"
                     className="w-full h-full border-0 rounded-lg"

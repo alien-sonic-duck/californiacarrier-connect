@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const base = import.meta.env.BASE_URL.endsWith('/')
-    ? import.meta.env.BASE_URL
-    : `${import.meta.env.BASE_URL}/`;
+  const baseUrl = import.meta.env.BASE_URL || "/";
+  const base = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
   const withBase = (p: string) => `${base}${p.replace(/^\//, "")}`;
 

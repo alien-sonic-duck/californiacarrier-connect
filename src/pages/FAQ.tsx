@@ -6,8 +6,8 @@ import { HelpCircle } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      question: "What is cellular offload and how does it work?",
-      answer: "Cellular offload uses your existing Wi-Fi infrastructure to extend cellular coverage. When customers' phones connect to our enhanced network, they automatically get better signal strength and faster data speeds. The technology seamlessly routes cellular traffic through your Wi-Fi network, reducing load on nearby cell towers while improving connectivity for everyone in your business."
+      question: "What is carrier offload and how does it work?",
+      answer: "Carrier offload uses your existing Wi-Fi infrastructure to extend cellular coverage. When customers' phones connect to our enhanced network, they automatically get better signal strength and faster data speeds. The technology seamlessly routes cellular traffic through your Wi-Fi network, reducing load on nearby cell towers while improving connectivity for everyone in your business."
     },
     {
       question: "Is this service really free?",
@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "Will this interfere with my existing Wi-Fi?",
-      answer: "No, our solution is designed to enhance, not interfere with your existing network. Our certified technicians conduct a thorough site survey and integrate the cellular offload equipment seamlessly with your current Wi-Fi infrastructure. Your existing internet service and Wi-Fi performance will not be affected."
+      answer: "No, our solution is designed to enhance, not interfere with your existing network. Our certified technicians conduct a thorough site survey and integrate the carrier offload equipment seamlessly with your current Wi-Fi infrastructure. Your existing internet service and Wi-Fi performance will not be affected."
     },
     {
       question: "Which cellular carriers are supported?",
@@ -43,7 +43,7 @@ const FAQ = () => {
     },
     {
       question: "What happens if my internet service goes down?",
-      answer: "Our system includes automatic failover capabilities. If your internet service is interrupted, the cellular offload temporarily disables to prevent any issues, and customers' phones automatically fall back to the traditional cellular tower coverage."
+      answer: "Our system includes automatic failover capabilities. If your internet service is interrupted, the carrier offload temporarily disables to prevent any issues, and customers' phones automatically fall back to the traditional cellular tower coverage."
     },
     {
       question: "Can this help with mobile payment processing?",
@@ -68,7 +68,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Get answers to common questions about our grant-funded cellular offload program
+              Get answers to common questions about our grant-funded carrier offload program
             </p>
           </div>
         </div>
@@ -111,7 +111,7 @@ const FAQ = () => {
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Our team is here to help. Contact us directly or submit an application to learn more 
-                about how cellular offload can benefit your business.
+                about how carrier offload can benefit your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 

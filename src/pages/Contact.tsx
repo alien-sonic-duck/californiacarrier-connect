@@ -14,7 +14,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Ready to improve your business connectivity? Get in touch with our team to learn more 
-              about grant-funded cellular offload solutions.
+              about grant-funded carrier offload solutions.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl">Apply for Service</CardTitle>
                 <p className="text-muted-foreground">
-                  Fill out our eligibility form to get started with your free cellular offload assessment.
+                  Fill out our eligibility form to get started with your free carrier offload assessment.
                 </p>
               </CardHeader>
               <CardContent>

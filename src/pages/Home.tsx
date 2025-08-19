@@ -53,7 +53,7 @@ const Home = () => {
                 Better Cell Coverage For Your Business.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Get grant-funded cellular offload solutions that improve connectivity for your customers 
+                Get grant-funded carrier offload solutions that improve connectivity for your customers 
                 while reducing burden on cell towers. Free installation and service available for qualifying businesses.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -105,7 +105,7 @@ const Home = () => {
               Transform Your Business Connectivity
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our cellular offload solutions provide enterprise-grade connectivity that improves customer experience 
+              Our carrier offload solutions provide enterprise-grade connectivity that improves customer experience 
               and supports local cellular infrastructure.
             </p>
           </div>
@@ -136,11 +136,11 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">
-                What Is Cellular Offload?
+                What Is Carrier Offload?
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Cellular offload uses your existing Wi-Fi infrastructure to extend and improve cellular coverage 
+                  Carrier offload uses your existing Wi-Fi infrastructure to extend and improve cellular coverage 
                   inside your business. When customers' phones connect to your enhanced network, they experience 
                   better signal strength and faster data speeds.
                 </p>
@@ -193,7 +193,7 @@ const Home = () => {
                 Ready to Improve Your Business Connectivity?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join businesses across California that are already benefiting from grant-funded cellular offload solutions. 
+                Join businesses across California that are already benefiting from grant-funded carrier offload solutions. 
                 Check your eligibility today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

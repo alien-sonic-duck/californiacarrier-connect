@@ -25,7 +25,7 @@ const About = () => {
     {
       icon: Globe,
       title: "Innovation",
-      description: "Leading-edge cellular offload solutions that prepare businesses for the future of connectivity"
+      description: "Leading-edge carrier offload solutions that prepare businesses for the future of connectivity"
     }
   ];
   const logoUrl = withBase('lovable-uploads/df5dc330-0f95-4275-afe8-948e7195b633.png');
@@ -41,7 +41,7 @@ const About = () => {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               We're dedicated to improving business connectivity across California through 
-              grant-funded cellular offload solutions that benefit businesses and communities alike.
+              grant-funded carrier offload solutions that benefit businesses and communities alike.
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ const About = () => {
                 </p>
                 <p>
                   Through strategic grant funding, we provide small and medium businesses with access to 
-                  enterprise-level cellular offload technology that was previously only available to large 
+                  enterprise-level carrier offload technology that was previously only available to large 
                   corporations.
                 </p>
                 <p>

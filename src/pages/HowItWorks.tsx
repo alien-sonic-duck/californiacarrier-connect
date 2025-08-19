@@ -25,7 +25,7 @@ const HowItWorks = () => {
     {
       step: "4",
       title: "Activation & Support",
-      description: "Your cellular offload solution goes live, providing immediate coverage improvements with ongoing monitoring and support.",
+      description: "Your carrier offload solution goes live, providing immediate coverage improvements with ongoing monitoring and support.",
       icon: Users
     }
   ];
@@ -49,7 +49,7 @@ const HowItWorks = () => {
               How California Carrier Offload Works
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Our grant-funded program provides businesses with professional cellular offload solutions 
+              Our grant-funded program provides businesses with professional carrier offload solutions 
               that enhance connectivity and support local network infrastructure.
             </p>
           </div>
@@ -107,7 +107,7 @@ const HowItWorks = () => {
                 Enterprise-Grade Technology
               </h2>
               <p className="text-muted-foreground mb-6">
-                Our cellular offload solution uses carrier-approved equipment and protocols to seamlessly 
+                Our carrier offload solution uses carrier-approved equipment and protocols to seamlessly 
                 extend cellular coverage through your existing Wi-Fi infrastructure.
               </p>
               <div className="space-y-3">
@@ -158,7 +158,7 @@ const HowItWorks = () => {
                 Ready to Get Started?
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Apply for grant-funded cellular offload and transform your business connectivity today.
+                Apply for grant-funded carrier offload and transform your business connectivity today.
               </p>
               <Button 
                 variant="default" 
